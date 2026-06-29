@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Smile - Tu Sonrisa Perfecta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        /* Additional advanced styles will be loaded here */
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#inicio" class="logo">Dr. <span>Smile</span></a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                                        <li><a href="#contacto" class="nav-link btn">Agenda tu Cita</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="dark-mode-toggle" id="darkModeToggle" title="Cambiar a modo noche">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-title-main" data-aos="fade-right" data-aos-delay="200">Dr. Smile</span>
+                        <span class="hero-title-sub" data-aos="fade-right" data-aos-delay="300">Tu Sonrisa, Nuestra Pasión</span>
+                    </h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                        Expertos en salud dental con tecnología de última generación. 
+                        Transformamos sonrisas y cambiamos vidas con tratamientos personalizados 
+                        y atención excepcional en Sabaneta, Antioquia.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#contacto" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Agendar Cita</span>
+                            <div class="btn-ripple"></div>
+                        </a>
+                        <a href="#servicios" class="btn btn-outline btn-large">
+                            <i class="fas fa-tooth"></i>
+                            <span>Nuestros Servicios</span>
+                            <div class="btn-ripple"></div>
+                        </a>
+                    </div>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                        <div class="stat-item">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="5">0</span>
+                                <span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="5000">0</span>
+                                <span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Sonrisas Transformadas</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number" data-count="98">0</span>
+                                <span class="stat-percent">%</span>
+                            </div>
+                            <span class="stat-label">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span class="scroll-text">Explora más</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Galería de Casos de Éxito -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Casos de Éxito</h2>
+                <p class="section-subtitle">
+                    Descubre las increíbles transformaciones que hemos logrado en nuestros pacientes.
+                </p>
+            </div>
+                        <div class="gallery-grid">
+                <div class="gallery-item" data-category="ortodoncia" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/ortodoncia_inicio.png" alt="Antes" class="gallery-image before">
+                        <div class="image-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                        <img src="images/ortodoncia_final.png" alt="Después" class="gallery-image after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Ortodoncia</h4>
+                        <p>Corrección completa de la mordida</p>
+                        <div class="gallery-tags">
+                            <span class="tag">6 meses</span>
+                            <span class="tag">Sonrisa perfecta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="implantes" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/implante_inicio.png" alt="Antes" class="gallery-image before">
+                        <div class="image-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                        <img src="images/implante_final.png" alt="Después" class="gallery-image after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Implantes Dentales</h4>
+                        <p>Restauración completa y funcional</p>
+                        <div class="gallery-tags">
+                            <span class="tag">3 meses</span>
+                            <span class="tag">Resultado permanente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="carillas" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/carillas_inicio.png" alt="Antes" class="gallery-image before">
+                        <div class="image-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                        <img src="images/carillas_final.png" alt="Después" class="gallery-image after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Carillas de Porcelana</h4>
+                        <p>Diseño de sonrisa personalizado</p>
+                        <div class="gallery-tags">
+                            <span class="tag">2 semanas</span>
+                            <span class="tag">Look natural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="blanqueamiento" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/blanqueamiento_inicio.png" alt="Antes" class="gallery-image before">
+                        <div class="image-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                        <img src="images/blanqueamiento_final.png" alt="Después" class="gallery-image after">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Blanqueamiento Profesional</h4>
+                        <p>8 tonos más blanco</p>
+                        <div class="gallery-tags">
+                            <span class="tag">1 sesión</span>
+                            <span class="tag">Resultado inmediato</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">
+                    Ofrecemos tratamientos dentales de alta calidad con tecnología avanzada 
+                    y profesionales altamente calificados para garantizar tu sonrisa perfecta.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ortodoncia</h3>
+                        <p>Corrección de dientes y mandíbulas para lograr una sonrisa perfecta y funcional.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Brackets</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Invisalign</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Blanqueamiento Dental</h3>
+                        <p>Tratamientos profesionales para obtener una sonrisa más brillante y blanca.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Láser</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> LED</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Implantes Dentales</h3>
+                        <p>Soluciones permanentes para reemplazar dientes perdidos con resultados naturales.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Titanio</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Zirconio</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Limpieza Dental</h3>
+                        <p>Profilaxis profesional para mantener tu salud bucal y prevenir enfermedades.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Ultrasonido</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Pulido</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Endodoncia</h3>
+                        <p>Tratamientos de conducto para salvar dientes dañados y eliminar el dolor.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Microscopio</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Sin dolor</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Odontopediatría</h3>
+                        <p>Cuidado dental especializado para niños y adolescentes con enfoque amigable.</p>
+                        <div class="service-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Preventivo</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Educativo</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#contacto" class="service-link">
+                            <span>Consultar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="section-subtitle">
+                    Transformamos sonrisas con pasión, tecnología y excelencia profesional
+                </p>
+            </div>
+            
+            <div class="about-modern">
+                <!-- Mission and Vision Cards -->
+                <div class="about-cards" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card mission-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misión</h3>
+                        <p>Proporcionar atención odontológica excepcional con tecnología de vanguardia, garantizando resultados superiores y una experiencia inolvidable para cada paciente.</p>
+                    </div>
+                    
+                    <div class="about-card vision-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visión</h3>
+                        <p>Ser la clínica dental líder en Antioquia, reconocida por nuestra innovación, calidad humana y resultados transformadores que cambian vidas.</p>
+                    </div>
+                    
+                    <div class="about-card values-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Valores</h3>
+                        <p>Excelencia, integridad, empatía y compromiso con la salud bucal de nuestros pacientes, tratando a cada persona como familia.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="team" id="equipo">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="team-grid">
+                <!-- Primera fila con 2 miembros -->
+                <div class="team-row">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/Dr Manuela.JPG" alt="Doctor">
+                        </div>
+                        <h3>Dr. Manuela Restrepo</h3>
+                        <p>Auxiliar de odontologia</p>
+                        <div class="team-social">
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/Dr Fernanda.jpeg" alt="Doctora">
+                        </div>
+                        <h3>Dra. María Fernanda Sáenz</h3>
+                        <p>Especialista en Periodoncia e Implantología</p>
+                        <div class="team-social">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Segunda fila con 2 miembros -->
+                <div class="team-row">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/Dr Alejandra.JPG" alt="Doctor">
+                        </div>
+                        <h3>Dra. Estefanía Zuluaga</h3>
+                        <p>Odontóloga general</p>
+                        <div class="team-social">
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/Dr Cristhian Reuto.png" alt="Doctor">
+                        </div>
+                        <h3>Dr. Cristhian Reuto</h3>
+                        <p>Odontólogo general</p>
+                        <div class="team-social">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">
+                    Estamos aquí para ayudarte a obtener la sonrisa que siempre has deseado. 
+                    Contáctanos y agenda tu consulta hoy mismo.
+                </p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Ubicación</h3>
+                            <p>Calle 49 #45a-300 Local 2009, Envigado, Antioquia, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <p>+57 302 2476951</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Correo</h3>
+                            <p>drsmileenvigado@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horario</h3>
+                            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            <p>Sábados: 10:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/drsmilecolombia/" class="social-link" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/573205596514" class="social-link" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="appointment-form" class="contact-form">
+                        <div class="form-header">
+                            <h3>Agenda tu Cita</h3>
+                            <p>Llena el formulario y nos comunicaremos contigo pronto</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="Tu nombre completo">
+                                <span class="form-error">Este campo es obligatorio</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" required class="form-input" placeholder="Tu número de teléfono">
+                                <span class="form-error">Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="tu@email.com">
+                            <span class="form-error">Ingresa un correo válido</span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="document-type">Tipo de Documento *</label>
+                                <select id="document-type" name="document-type" required class="form-input">
+                                    <option value="">Selecciona tipo</option>
+                                    <option value="cc">Cédula de Ciudadanía</option>
+                                    <option value="ce">Cédula de Extranjería</option>
+                                    <option value="passport">Pasaporte</option>
+                                    <option value="ti">Tarjeta de Identidad</option>
+                                </select>
+                                <span class="form-error">Selecciona tipo de documento</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="document-number">Número de Documento *</label>
+                                <input type="text" id="document-number" name="document-number" required class="form-input" placeholder="123456789">
+                                <span class="form-error">Ingresa número de documento</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth-date">Fecha de Nacimiento *</label>
+                            <input type="date" id="birth-date" name="birth-date" required class="form-input">
+                            <span class="form-error">Ingresa fecha de nacimiento</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés *</label>
+                            <select id="service" name="service" required class="form-input">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="general">Consulta General</option>
+                                <option value="limpieza">Limpieza Dental</option>
+                                <option value="blanqueamiento">Blanqueamiento Dental</option>
+                                <option value="corona-implante">Corona sobre Implante</option>
+                                <option value="diseno-sonrisa">Diseño de Sonrisa</option>
+                                <option value="endodoncia">Endodoncia</option>
+                                <option value="implantes">Implantes Dentales</option>
+                                <option value="odontopediatria">Odontopediatría</option>
+                                <option value="operatoria">Operatoria</option>
+                                <option value="ortodoncia">Ortodoncia</option>
+                                <option value="protesis-hibrida">Prótesis Híbrida</option>
+                            </select>
+                            <span class="form-error">Selecciona un servicio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="form-input" placeholder="Cuéntanos sobre tu caso o lo que necesitas..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkbox-custom"></span>
+                                Acepto la política de privacidad y términos de uso *
+                            </label>
+                            <span class="form-error">Debes aceptar los términos</span>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Enviando...
+                            </span>
+                        </button>
+                        <div class="form-success" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <p>¡Mensaje enviado con éxito! Nos comunicaremos contigo pronto.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6903335082977!2d-75.6027955303889!3d6.1627096996140285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683cbebbee163%3A0x2de6f000efad8887!2sCl%2049%20Sur%20%2346-27%2C%20Zona%208%2C%20Envigado%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1765663264290!5m2!1ses!2sco"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: var(--border-radius-xl);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Dr. <span>Smile</span></h3>
+                        <p>Cuidando tu sonrisa, mejorando tu vida con tratamientos dentales de alta calidad y tecnología avanzada.</p>
+                        <div class="footer-social">
+                            <h4>Síguenos</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/drsmilecolombia/" target="_blank" aria-label="Instagram" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/573205596514" target="_blank" aria-label="WhatsApp" class="social-link">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="footer-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio" class="footer-link"><i class="fas fa-home"></i> Inicio</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-tooth"></i> Servicios</a></li>
+                            <li><a href="#nosotros" class="footer-link"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                            <li><a href="#equipo" class="footer-link"><i class="fas fa-users"></i> Equipo</a></li>
+                                                        <li><a href="#contacto" class="footer-link"><i class="fas fa-envelope"></i> Agenda tu Cita</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="footer-services">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Ortodoncia</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Blanqueamiento Dental</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Implantes Dentales</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Limpieza Dental</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Endodoncia</a></li>
+                            <li><a href="#servicios" class="footer-link"><i class="fas fa-check"></i> Odontopediatría</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="footer-contact">
+                        <h4>Información de Contacto</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Ubicación:</strong><br>
+                                    Cra 43 # 55-50 local 2009, Sabaneta<br>
+                                    Antioquia, Colombia
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Teléfono:</strong><br>
+                                    <a href="tel:+573205596514">+57 302 2476951</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Correo:</strong><br>
+                                    <a href="mailto:drsmileenvigado@gmail.com">drsmileenvigado@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="footer-hours">
+                        <h4>Horario de Atención</h4>
+                        <div class="hours-info">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Lunes - Viernes:</strong><br>
+                                    9:00 AM - 6:00 PM
+                                </div>
+                            </div>
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Sábados:</strong><br>
+                                    10:00 AM - 3:00 PM
+                                </div>
+                            </div>
+                            <div class="hours-item closed">
+                                <i class="fas fa-times-circle"></i>
+                                <div>
+                                    <strong>Domingos:</strong><br>
+                                    Cerrado
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2026 Dr. Smile. Todos los derechos reservados.</p>
+                        <p class="footer-tagline">Tu sonrisa es nuestra prioridad</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Política de Privacidad</a>
+                        <span class="separator">|</span>
+                        <a href="#" class="legal-link">Términos de Servicio</a>
+                        <span class="separator">|</span>
+                        <a href="#" class="legal-link">Política de Tratamiento de Datos</a>
+                    </div>
+                    <div class="footer-badges">
+                        <div class="badge">
+                            <i class="fas fa-award"></i>
+                            <span>Certificación</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Seguro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+        
+        // Refresh AOS después de carga dinámica
+        window.addEventListener('load', () => {
+            AOS.refresh();
+        });
+    </script>
+</body>
+</html>
