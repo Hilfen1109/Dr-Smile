@@ -167,17 +167,19 @@ const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
 // Toggle del menú móvil
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-});
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    });
+}
 
 // Cerrar menú al hacer clic en un enlace
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        if (hamburger) hamburger.classList.remove('active');
+        if (navMenu) navMenu.classList.remove('active');
         document.body.classList.remove('no-scroll');
     });
 });
@@ -189,14 +191,14 @@ window.addEventListener('scroll', () => {
     const navMenu = document.getElementById('nav-menu');
     
     if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        if (navbar) navbar.classList.add('scrolled');
     } else {
-        navbar.classList.remove('scrolled');
+        if (navbar) navbar.classList.remove('scrolled');
     }
     
     // Cerrar menú móvil al hacer scroll
     if (window.scrollY > 100 && navMenu && navMenu.classList.contains('active')) {
-        hamburger.classList.remove('active');
+        if (hamburger) hamburger.classList.remove('active');
         navMenu.classList.remove('active');
         document.body.classList.remove('no-scroll');
     }
@@ -288,7 +290,7 @@ function validateForm() {
     
     // Validar checkbox de términos
     const privacyCheckbox = form.querySelector('#privacy');
-    if (!privacyCheckbox.checked) {
+    if (privacyCheckbox && !privacyCheckbox.checked) {
         privacyCheckbox.closest('.form-group').classList.add('error');
         isValid = false;
     }
@@ -464,6 +466,8 @@ function initDarkMode() {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const html = document.documentElement;
     
+    if (!darkModeToggle) return;
+    
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', currentTheme);
@@ -498,7 +502,8 @@ function initDarkMode() {
     // Listen for system theme changes
     if (window.matchMedia) {
         const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        darkModeQuery.addListener((e) => {
+        // Use addEventListener instead of deprecated addListener
+        darkModeQuery.addEventListener('change', (e) => {
             if (!localStorage.getItem('theme')) {
                 const systemTheme = e.matches ? 'dark' : 'light';
                 html.setAttribute('data-theme', systemTheme);
@@ -511,6 +516,8 @@ function initDarkMode() {
 
 function updateToggleTitle(theme) {
     const darkModeToggle = document.getElementById('darkModeToggle');
+    if (!darkModeToggle) return;
+    
     if (theme === 'dark') {
         darkModeToggle.title = 'Cambiar a modo día';
     } else {
@@ -520,6 +527,8 @@ function updateToggleTitle(theme) {
 
 function updateToggleIcon(theme) {
     const themeIcon = document.getElementById('theme-icon');
+    if (!themeIcon) return;
+    
     if (theme === 'dark') {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
